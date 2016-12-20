@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB9-8B4A-11D0-8D11-00A0C91BC942}") = "Vuforia.UnityExtensions.Editor", "Vuforia.UnityExtensions.Editor.dll", "{68BED00A-2A5B-4877-A8D9-1B3084B42BAC}"
+	ProjectSection(MonoDevelopProperties) = preProject
+		name = Vuforia.UnityExtensions.Editor
+		Configurations = $0
+		$0.Configuration = $1
+		$1.name = Default
+		$1.OutputPath = .\
+		$1.ctype = ProjectConfiguration
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Any CPU = Default|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68BED00A-2A5B-4877-A8D9-1B3084B42BAC}.Default|Any CPU.ActiveCfg = Default|Any CPU
+		{68BED00A-2A5B-4877-A8D9-1B3084B42BAC}.Default|Any CPU.Build.0 = Default|Any CPU
+	EndGlobalSection
+EndGlobal

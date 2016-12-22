@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MoveTowards : MonoBehaviour {
+	public float moveSpeed = 0.1f;
 	private Vector3 cameraPosition; 
 	private Vector3 ghostPosition;
 	// Use this for initialization
@@ -14,7 +15,7 @@ public class MoveTowards : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		ghostPosition = Vector3.MoveTowards(ghostPosition, cameraPosition, 0.01f);
+		ghostPosition = Vector3.MoveTowards(ghostPosition, cameraPosition, moveSpeed);
 		transform.position = ghostPosition;
 
 		if (ghostPosition == cameraPosition) {

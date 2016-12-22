@@ -10,6 +10,7 @@ public class touchManager : MonoBehaviour {
 	AudioSource explosionSound;
 
 	private float nextFire = 0f;
+	private Vector3 pivotPointFix = new Vector3(-3.2f, 2.5f, -1f);
 
 	// Use this for initialization
 	void Start () {
@@ -44,7 +45,7 @@ public class touchManager : MonoBehaviour {
 				//Debug.Log(hit.transform.gameObject);
 				//Debug.Log(hit.transform);
 
-				Instantiate(explosion, hit.transform.position, Quaternion.identity);
+				Instantiate(explosion, hit.transform.position+pivotPointFix, Quaternion.identity);
 				//explosionSound.Play();
 				//AudioSource.PlayClipAtPoint(clip, new Vector3(5, 1, 2));
 				AudioSource.PlayClipAtPoint(explosionSoundClip, hit.transform.position);
